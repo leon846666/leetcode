@@ -4,6 +4,13 @@ import java.awt.List;
 
 public class AddTwoNum {
 	
+
+	/**
+	 *  Question : 2	Add Two Numbers    
+	 * 	Level : 	Medium
+	 * 	Result: 	Accepted 
+	 * 	Author: 	Yang Liu (referenced from official solution)
+	 * */
 	class ListNode{
 		
 		int val;

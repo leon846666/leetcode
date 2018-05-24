@@ -3,6 +3,13 @@ package leetcode.solution;
 import java.util.HashSet;
 import java.util.Set;
 
+
+/**
+ *  Question : 3. Longest Substring Without Repeating Characters
+ * 	Level : 	Medium
+ * 	Result: 	Time Limit Exceeded
+ * 	Author: 	Yang Liu
+ * */	
 public class NoRepeatSubstring {
 	static class Solution {
 	    public static int lengthOfLongestSubstring(String s) {

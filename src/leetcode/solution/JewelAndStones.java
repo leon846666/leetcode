@@ -2,6 +2,12 @@ package leetcode.solution;
 
 public class JewelAndStones {
 
+	/**
+	 *  Question : 771 JewelAndStones
+	 * 	Level : 	Easy
+	 * 	Result: 	Accepted
+	 * 	Author: 	Yang Liu
+	 * */
 	static class Solution{
 	
 		public static int findJewels(String jewels,String stones) {

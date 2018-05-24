@@ -2,6 +2,12 @@ package leetcode.solution;
 
 public class TwoNum {
 
+/**
+ *  Question : 1. Two Sum
+ * 	Level : 	Eazy
+ * 	Result: 	Accepted
+ * 	Author: 	Yang Liu
+ * */	
 	static class  Solutoin{
 		
 		public static int [] twoNum(int arr[],int target) {

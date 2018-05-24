@@ -4,6 +4,13 @@ import java.util.HashSet;
 
 public class UniqueMorseCodeWords {
 
+	
+	/**
+	 *  Question : 804.Unique Morse Code Words     
+	 * 	Level : 	Easy
+	 * 	Result: 	Accepted
+	 * 	Author: 	Yang Liu
+	 * */
 	static class Solution{
 		
 		public static int uniqueMorseCode(String [] words) {

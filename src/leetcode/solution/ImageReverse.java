@@ -4,6 +4,13 @@ import java.util.ArrayList;
 
 public class ImageReverse {
 
+
+	/**
+	 *  Question : 832.Flipping an Image    
+	 * 	Level : 	Easy
+	 * 	Result: 	Accepted
+	 * 	Author: 	Yang Liu
+	 * */
 	static class Solution{
 		public static int[][] imageReverse() {
 			
