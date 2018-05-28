@@ -12,24 +12,6 @@ public class ImageReverse {
 	 * 	Author: 	Yang Liu
 	 * */
 	static class Solution{
-		public static int[][] imageReverse() {
-			
-			return new int[1][3];
-		}
-		public static void main(String[] args) {
-		//	String a="10100111";
-			int a[][] = {{1,1,0},{1,0,1},{0,0,0}};
-			//System.out.println(a.length);
-		
-			 a = dimensionAarrayReverse(a);
-			
-			 for (int []i : a) {
-				for (int j = 0; j < i.length; j++) {
-					System.out.println(i[j]);
-				}
-			}
-		}
-		
 		public static String stringReverse (String s) {
 		
 			if(s==null||s.length()<2) return s;
@@ -64,6 +46,21 @@ public class ImageReverse {
 				
 				return arr;
 			}
+
+		public static void main(String[] args) {
+		//	String a="10100111";
+			int a[][] = {{1,1,0},{1,0,1},{0,0,0}};
+			//System.out.println(a.length);
+		
+			 a = dimensionAarrayReverse(a);
+			
+			 for (int []i : a) {
+				for (int j = 0; j < i.length; j++) {
+					System.out.println(i[j]);
+				}
+			}
+		}
 		
 	}
+	
 }
