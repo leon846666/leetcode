@@ -11,18 +11,7 @@ public class RisingTemperature {
 			 * 	Result: 	Accepted
 			 * 	Author: 	Yang Liu
 			 * */
-			/**
-			 * SELECT
-				    weather.id AS 'Id'
-				FROM
-				    weather
-				        JOIN
-				    weather w ON DATEDIFF(weather.date, w.date) = 1
-				        AND weather.Temperature > w.Temperature
-				;
-			 * 
-			 * 
-			 * */
+		
 			String sql="select Weather.id from Weather"
 					+ " join Weather w "
 					+ " on datediff( Weather.RecordDate,w.RecordDate)=1 "
