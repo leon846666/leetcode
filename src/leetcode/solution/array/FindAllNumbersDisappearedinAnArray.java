@@ -1,9 +1,6 @@
 package leetcode.solution.array;
 
-import java.awt.event.MouseWheelEvent;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -13,8 +10,9 @@ public class FindAllNumbersDisappearedinAnArray {
 
 	public static List<Integer> findAllNumbersDisappearedinAnArray (int[] nums) {
 		List<Integer> list=IntStream.of(nums).boxed().collect(Collectors.toList());
-		Map<Integer,List<Integer>>map=list.stream().collect(Collectors.groupingBy(u -> u.intValue()));
-        List<Integer> num=new ArrayList();
+		Map<Integer,List<Integer>>map=list.stream().collect(Collectors.groupingBy(u->u.intValue()));
+		
+        List<Integer> num=new ArrayList<Integer>();
        for(int i=1;i<=nums.length;i++){
            if(map.get(i)==null){
               num.add(i); 
