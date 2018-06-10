@@ -14,6 +14,7 @@ public class ReverseString {
 	 * */
 	
 	 public static String reverseString(String s) {
+		 // using StringBuilder instead of String to avoid creating new String objects;
 	      StringBuilder sb = new StringBuilder();
 	        for(int i=s.length()-1;i>=0;i--){
 	            sb.append(s.charAt(i));
