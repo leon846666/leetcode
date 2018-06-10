@@ -13,25 +13,26 @@ public class ReshapeTheMatrix {
 	class Solution {
 	    public int[][] matrixReshape(int[][] nums, int r, int c) {
 	    	ArrayList<Integer> list = new ArrayList<Integer>();
-	      for (int i = 0; i < nums.length; i++) {
-			for (int j = 0; j < nums[i].length; j++) {
-				list.add(nums[i][j]);
-			}
-		}
-	      System.out.println(list.size());
-	      if (r*c== list.size()) {
-	    	 int listIndex =0;
-			int [][] newNums=new int[r][c];
-			for (int i = 0; i < newNums.length; i++) {
-				for (int j = 0; j < list.size()/r; j++) {
-					newNums[i][j]=list.get(listIndex);
-					listIndex++;
+		      for (int i = 0; i < nums.length; i++) {
+				for (int j = 0; j < nums[i].length; j++) {
+					list.add(nums[i][j]);
 				}
 			}
-			return newNums;
-		}
-	    	return nums;
-	    }
+		      System.out.println(list.size());
+		      if (r*c== list.size()) {
+		    	 int listIndex =0;
+				int [][] newNums=new int[r][c];
+				for (int i = 0; i < newNums.length; i++) {
+					for (int j = 0; j < list.size()/r; j++) {
+						newNums[i][j]=list.get(listIndex);
+						listIndex++;
+					}
+				}
+				return newNums;
+			}
+		    	return nums;
+		    }
+		    
 	    
 	    
 	}
