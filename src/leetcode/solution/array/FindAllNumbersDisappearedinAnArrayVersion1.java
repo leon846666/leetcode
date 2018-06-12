@@ -8,9 +8,10 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class FindAllNumbersDisappearedinAnArray {
+public class FindAllNumbersDisappearedinAnArrayVersion1 {
 
-	/**
+	/** Version 1;
+	 *  Runtime: 166ms
 	 *  Question :	448. Find All Numbers Disappeared in an Array
 	 *  Category: 	Array    
 	 * 	Level : 	Easy
@@ -48,10 +49,6 @@ public class FindAllNumbersDisappearedinAnArray {
 		Map<Integer, Integer> map = new HashMap<>();
 		for (int i = 0; i < nums.length; i++) {
 			map.put(nums[i] ,nums[i] );
-		}
-		for (Integer integer : map.keySet()) {
-			
-			System.out.println(integer);
 		}
 		
 		for (int i = 1; i <= nums.length; i++) {
