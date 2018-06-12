@@ -38,20 +38,14 @@ public class MajorityElementVersion2 {
 	        }
 	        
 	      for (int i = 0; i < nums.length; i++) {
-				
 				if(map.get(nums[i])==null){
 					//counter++;
 					map.put(nums[i],1);
 				}else{
-					
 					map.put(nums[i], map.get(nums[i])+1);
-					
 				}
-				
 			}
-			
 			for(Integer key :map.keySet()){
-			
 				if(nums.length/map.get(key)<2){
 					return key;
 				}

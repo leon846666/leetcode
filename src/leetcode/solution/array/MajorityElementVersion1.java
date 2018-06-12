@@ -45,22 +45,17 @@ public class MajorityElementVersion1 {
 						if(i+1<nums.length&&nums[i]==nums[i+1]){
 							count++;
 							map.put(nums[i], count);
-							
 					}else {
 						count=1;
 					}
-						
 				}
-				
 				for(Integer key :map.keySet()){
 					if(nums.length/map.get(key)<2){
 						return key;
 					}
 				}
-				
 				return -1;
 	}
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] nums={2,2,1,1,1,2,2};
