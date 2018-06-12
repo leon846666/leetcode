@@ -36,29 +36,15 @@ public class FindAllNumbersDisappearedinAnArrayVersion1 {
 		
 	 * */
 	public static List<Integer> findAllNumbersDisappearedinAnArray (int[] nums) {
-		/*List<Integer> list=IntStream.of(nums).boxed().collect(Collectors.toList());
-		Map<Integer,List<Integer>>map=list.stream().collect(Collectors.groupingBy(u->u.intValue()));
-		
-        List<Integer> num=new ArrayList<Integer>();
+		List<Integer> list=IntStream.of(nums).boxed().collect(Collectors.toList());
+		Map<Integer,List<Integer>>map=list.stream().collect(Collectors.groupingBy(u -> u.intValue()));
+        List<Integer> num=new ArrayList();
        for(int i=1;i<=nums.length;i++){
            if(map.get(i)==null){
               num.add(i); 
            }
-       }*/
-		List<Integer> list = new ArrayList<>();
-		Map<Integer, Integer> map = new HashMap<>();
-		for (int i = 0; i < nums.length; i++) {
-			map.put(nums[i] ,nums[i] );
-		}
-		
-		for (int i = 1; i <= nums.length; i++) {
-			if(map.get(i)==null){
-				list.add(i);
-			}
-		}
-		
-       return list;
-		
+       }
+       return num;
 		
 		
 	}
