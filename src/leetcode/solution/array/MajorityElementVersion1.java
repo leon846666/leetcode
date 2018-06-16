@@ -55,7 +55,7 @@ public class MajorityElementVersion1 {
 					}
 				}
 				return -1;
-	}
+	} 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] nums={2,2,1,1,1,2,2};
